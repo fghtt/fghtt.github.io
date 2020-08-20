@@ -1,0 +1,408 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/*
+body
+*/
+body{
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.body-content{
+	width: 100%;
+	max-width: 1920px;
+}
+/*
+header
+*/
+header{
+    background: linear-gradient( to right top, #811087, #340d78);
+    height: 620px;
+    width: 100%;
+    position: relative;
+}
+
+.title{
+	position: relative;
+	top: 20px;
+	margin: 0 0 0 2%;
+	display: inline-block;
+	border: 2px solid white;
+	padding: 3px;
+}
+
+.title h1{
+	display: inline-block;
+	font-size: 25px;
+	color: white;
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+nav{
+	position: relative;
+    margin: 0 0 0 70%;
+    z-index: 1;
+}
+
+nav a{
+	color: white;
+	text-decoration: none;
+}
+
+nav li{
+	display: inline;
+	list-style: none;
+	margin: 0 0 0 6px;
+	position: relative;
+}
+
+nav li:hover{
+	border-bottom: 1px solid white;
+}
+
+.image-background{
+	background: white;
+	width: 400px;
+	height: 400px;
+	margin: 0 0 0 10%;
+	position: relative;
+	top: 60px;
+	-webkit-transform: skew(-10deg);
+    -moz-transform: skew(-10deg);
+    -o-transform: skew(-10deg);
+    transform: skew(-10deg);
+}
+
+.image{
+	position: absolute;
+	top: 150px;
+	margin: 0 0 0 13%;
+}
+
+.image img{
+	width: 40%;
+	transition: 1s all;
+}
+
+.image img:hover{
+	width: 41%;
+	transition: 1s all;
+}
+
+h2{
+	color: white;
+	font-size: 40px;
+	margin: 0 0 20px 0;
+}
+
+header p{
+    color: white;
+    width: 600px;
+    margin: 20px 0 0 0;
+}
+
+.inscriptions{
+	position: absolute;
+	top: 190px;
+	z-index: 0;
+	margin: 0 0 0 50%;
+}
+
+.inscriptions a{
+	color: white;
+	text-decoration: none;
+}
+
+.button1{
+    border: 2px solid white;
+    padding: 4px;
+    width: 140px;
+    display: flex;
+    justify-content: center;
+}
+
+.button2{
+	margin: 0 0 0 30px;
+	border: 2px solid white;
+	padding: 4px;
+	width: 140px;
+	display: flex;
+    justify-content: center;
+}
+
+.buttons{
+	display: flex;
+	margin: 20px 0 0 0;
+}
+
+.butt{
+	transition: 1s all;
+}
+
+.butt:hover{
+     background: #811087;
+}
+
+/*main*/
+main{
+    width: 100%;
+    position: relative;
+}
+
+.section1{
+	background: #f1f0f2;
+	height: 520px;
+}
+
+h3{
+	color: #1e1d1f;
+	font-size: 30px;
+	margin: 0 0 0 10px;
+}
+
+.section-name{
+	position: relative;
+	top: 20px;
+	margin: 0px 0 0 4%;
+	background: #666666;
+	width: 500px;
+	border: 1px solid black;
+	display: flex;
+	padding: 4px;
+}
+
+.section-name form{
+	margin: 0 0 0 20px;
+	display: flex;
+}
+
+.section-name form input{
+	border: 0;
+	border-radius: 0;
+	height: 30px;
+	margin: 4px 0 0 0;
+	padding: 0 0 0 4px;
+}
+
+.section-name form button{
+	border: 0;
+	border-radius: 0;
+	height: 30px;
+	margin: 4px 0 0 3px;
+	padding: 0 4px 0 4px;
+	background: black;
+	color: white;
+}
+
+.products{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.products .product{
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 50px 0 0 0;
+    transition: 1s all;
+}
+
+.products .product:hover{
+    box-shadow: -4px 4px 14px rgb(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.product-image img{
+	width: 330px;
+}
+
+.product-name{
+	background: #340d78;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+}
+
+.product-name span{
+	color: white;
+	position: relative;
+	top: 5px;
+}
+
+.sale img{
+	width: 140px;
+	position: absolute;
+	transform: rotate( -40deg);
+	z-index: 1;
+}
+
+.section2{
+	background: linear-gradient( to right top, #811087, #340d78);
+	height: 620px;
+}
+
+.contacts p{
+	color: white;
+	width: 500px
+}
+
+.contacts{
+	position: relative;
+	top: 100px;
+	margin: 0 0 0 10%;
+}
+
+.image-background2{
+	background: white;
+	width: 400px;
+	height: 400px;
+	margin: 0 0 0 60%;
+	position: relative;
+	top: -20px;
+	-webkit-transform: skew(-10deg);
+    -moz-transform: skew(-10deg);
+    -o-transform: skew(-10deg);
+    transform: skew(-10deg);
+}
+
+.image-contacts{
+	position: relative;
+	top: -460px;
+	margin: 0 0 0 55%;
+}
+
+.image-contacts img{
+	width: 450px;
+	opacity: 0;
+	transform: translateX( 400px);
+	transition: 1s all;
+}
+
+.contacts form{
+	position: relative;
+	top: 40px;
+}
+
+.contacts input{
+	border: 0;
+	border-radius: 0;
+	height: 35px;
+	padding: 0 0 0 4px;
+}
+
+.contacts button{
+	border: 0;
+	border-radius: 0;
+	height: 35px;
+	padding: 0 10px 0 10px;
+	background: black;
+	color: white;
+}
+
+.section3{
+	background: #f0f0f0;
+	display: flex;
+	justify-content: center;
+}
+
+.products2{
+	width: 80%;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin: 0 0 40px 0;
+}
+
+.products2 .product img{
+	width: 240px;
+}
+
+.product .product-image{
+	width: 250px;
+	display: flex;
+	justify-content: center;
+    overflow: hidden;
+}
+
+.products2 .product{
+	background: white;
+	width: 250px;
+	height: 270px;
+	margin: 40px 0 0 0;
+	position: relative;
+	z-index: 0;
+}
+
+.price{
+	font-size: 26px;
+	color: white;
+}
+
+.price span{
+	font-size: 24px;
+}
+
+.product-description{
+	background: black;
+}
+
+.hov-ef-container{
+	width: 250px;
+	height: 100%;
+	position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.hov-ef{
+    background: black;
+    opacity: 0;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.hov-ef:hover{
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+
+
+.buy{
+	opacity: 0;
+	position: absolute;
+	z-index: 2;
+	margin: 70px 0 0 0;
+	height: 20px;
+	padding: 10px;
+	border: 2px solid white;
+}
+
+.buy:hover{
+	background: black;
+}
+
+.buy a{
+	color: white;
+	text-decoration: none;
+}
+
+footer{
+	width: 100%;
+	height: 350px;
+	background: linear-gradient( to right top, #811087, #340d78);;
+	display: flex;
+	justify-content: center; 
+	padding: 20px 0 0 0;
+}
+
+.footer-menu{
+	margin: 0;
+}
